@@ -11,6 +11,9 @@ body {
     background-color: #392c32;
     color: #fff;
     height: 92px;
+    position: fixed;
+    width: 100%
+    z-index: 10
   }
   
   .header-logo {
