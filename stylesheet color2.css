@@ -1,32 +1,36 @@
 body {
     font-family: "Avenir Next";
     background-color: #bfd1c9;
-    background-image: url(MIKU\ background.jpg);
+    background-image: url(Miku\ at\ home.jpg);
     background-size: repeat;
-  }
+  }    
   
   li {
     list-style: none;
   }
   
   .header {
-    background-color: #392c32;
+    background-color: #c6bfc2;
     color: #fff;
     height: 92px;
     position: fixed;
     width: 100%;
     z-index: 10;
+    margin-top: -15px;
+    margin-left: -10px;
   }
   
   .header-logo {
     float: left;
     font-size: 36px;
     padding: 20px 40px;
+    margin-top: 5px;
+    margin-right: 20px;
   }
   
   .header-list li {
     float: left;
-    padding: 33px 20px;
+    padding: 23px 20px 0px 20px;
   }
   
   .main {
@@ -35,14 +39,19 @@ body {
   
   .copy-container h1 {
     font-size: 140px;
+    position: relative;
   }
   
   .copy-container h2 {
     font-size: 60px;
+    margin-top: -100px;
+    background-color:rgb(255, 251, 251);
+    opacity: 0.6;
+    border-radius: 30px;
   }
   
-  .copy-container span {
-    color: #ff4a4a;
+  .span-1 {
+    color: rgb(147, 142, 142);
   }
   
   .contents {
@@ -93,6 +102,8 @@ body {
     color: #fff;
     height: 120px;
     padding: 40px;
+    margin-bottom: -20px;
+    margin-left: -10px;
   }
   
   .footer-logo {
@@ -108,3 +119,13 @@ body {
     padding-bottom: 20px;
   }
   
+  .ERO {
+    position: absolute;
+    top: -70px;
+  }
+  .HELLO {
+    color: rgb(37, 36, 35);
+  }
+  .span-2 {
+    color: rgb(202, 197, 197);
+  }
