@@ -10,7 +10,7 @@ body {
   .header {
     background-color: #392c32;
     color: #fff;
-    height: 92px;
+    height: 920px;
   }
   
   .header-logo {
@@ -62,7 +62,9 @@ body {
     margin-top: 30px;
   }
   
-  
+  .contact-form {
+    padding-top: 50px;
+  }
   
   input, textarea {
     width: 400px;
