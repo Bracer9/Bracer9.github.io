@@ -46,7 +46,7 @@ body {
   }
   
   .section-title {
-    border-bottom: 2px solid ##392c32;
+    border-bottom: 2px solid #392c32;
     font-size: 28px;
     padding-bottom: 15px;
     margin-bottom: 50px;
@@ -72,7 +72,7 @@ body {
     margin-bottom: 30px;
     padding: 20px;
     font-size: 18px;
-    border: 1px solid #dee7ec;
+    border: 1px solid #392c32;
   }
   /* inputとtextareaのCSSを指定してください */
   
