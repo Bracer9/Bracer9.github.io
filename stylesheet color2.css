@@ -3,6 +3,8 @@ body {
     background-color: #bfd1c9;
     background-image: url(Miku\ at\ home.jpg);
     background-size: repeat;
+    min-height: 100vh;
+    position: relative;
   }    
   
   li {
@@ -10,7 +12,7 @@ body {
   }
   
   .header {
-    background-color: #c6bfc2;
+    background-color: #c0babc;
     color: #fff;
     height: 92px;
     position: fixed;
@@ -18,20 +20,48 @@ body {
     z-index: 10;
     margin-top: -15px;
     margin-left: -10px;
+    opacity: 0.95;
   }
   
   .header-logo {
     float: left;
-    font-size: 40px;
+    font-size: 43px;
     padding: 20px 40px;
     margin-top: 0px;
     margin-right: 0px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
   }
   
-  .header-list li {
+  .header-logo:hover {
+    opacity: 1;
+  }
+
+  .header-logo {
+    transition: all 0.5s;
+  }
+
+  .header-list a {
     float: left;
-    padding: 23px 20px 0px 20px;
-    font-size: 18px;
+    padding: 23px 40px 0px 40px;
+    font-size: 22px;
+    opacity: 0.8;
+  }
+
+  .btn-list:hover {
+    opacity: 1;
+  }
+  
+  .btn-list {
+    transition: all 0.3s;
+  }
+
+  .btn-list {
+    display: inline-block;
+    color: white;
+    bottom: none;
+    text-decoration: none;
   }
   
   .main {
@@ -41,6 +71,7 @@ body {
   .copy-container h1 {
     font-size: 140px;
     position: relative;
+    padding-top: 100px;
   }
   
   .copy-container h2 {
@@ -50,6 +81,7 @@ body {
     opacity: 0.6;
     border-radius: 30px;
     text-align: right;
+    padding-right: 25px;
   }
   
   .span-1 {
@@ -103,28 +135,51 @@ body {
   .footer {
     background-color: #392c32;
     color: #fff;
-    height: 120px;
-    padding: 40px;
-    margin-bottom: -20px;
-    margin-left: -10px;
+    height: 100px;
+    padding: 30px 40px 70px 40px;
+    margin-left: -100px;
+    width: 100%;
+    position: absolute;/*←絶対位置*/
+    bottom: -20vh; /*下に固定*/
+
   }
   
+  .btn-footer {
+    display: inline-block;
+    color: white;
+    text-align: right;
+  }
+
   .footer-logo {
     float: left;
-    font-size: 32px;
+    color: #fff;
+    font-size: 40px;
+    margin-top: 20px;
+    opacity: 0.7;
   }
   
+.footer-logo:hover {
+  opacity: 1;
+}
+
+.footer-logo {
+  transition: all 0.5s;
+}
+
   .footer-list {
     float: right;
   }
   
-  .footer-list li {
-    padding-bottom: 20px;
+  .footer-list a {
+    margin-top: 40px;
+    margin-right: 50px;
+    font-size: 24px;
+    opacity: 0.7;
   }
   
   .ERO {
     position: absolute;
-    top: -70px;
+    top: -190px;
   }
   .HELLO {
     color: rgb(37, 36, 35);
@@ -132,3 +187,9 @@ body {
   .span-2 {
     color: rgb(202, 197, 197);
   }
+
+  .footer-list li:hover {
+    opacity: 1;
+  }
+
+  
