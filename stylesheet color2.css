@@ -49,6 +49,7 @@ body {
     background-color:rgb(255, 251, 251);
     opacity: 0.6;
     border-radius: 30px;
+    text-align: right;
   }
   
   .span-1 {
