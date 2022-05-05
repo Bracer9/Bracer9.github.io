@@ -22,15 +22,16 @@ body {
   
   .header-logo {
     float: left;
-    font-size: 36px;
+    font-size: 40px;
     padding: 20px 40px;
-    margin-top: 5px;
-    margin-right: 20px;
+    margin-top: 0px;
+    margin-right: 0px;
   }
   
   .header-list li {
     float: left;
     padding: 23px 20px 0px 20px;
+    font-size: 18px;
   }
   
   .main {
@@ -78,6 +79,7 @@ body {
   
   .contact-form {
     padding-top: 30px;
+   
   }
   
   input, textarea {
