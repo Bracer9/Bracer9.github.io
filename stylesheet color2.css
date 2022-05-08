@@ -1,3 +1,7 @@
+
+
+
+  
 body {
     font-family: "Avenir Next";
     background-color: #bfd1c9;
@@ -6,7 +10,85 @@ body {
     min-height: 100vh;
     position: relative;
   }    
-  
+  #loader-wrap {
+    position: fixed;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      margin-top: -8px;
+      margin-left: -9px;
+      background: rgb(13, 197, 193);
+      z-index: 9999;
+      
+  }
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #ffffff;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #ffffff;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
   li {
     list-style: none;
   }
@@ -21,6 +103,7 @@ body {
     margin-top: -15px;
     margin-left: -10px;
     opacity: 0.9;
+    
 
   }
   
@@ -33,6 +116,7 @@ body {
     text-decoration: none;
     color: #fff;
     transition: all 0.6s;
+    
   }
   
   .header-logo:hover {
@@ -140,7 +224,7 @@ body {
     margin-right: -100px;
     width: 100%;
     position: absolute;/*←絶対位置*/
-    bottom: -20vh; /*下に固定*/
+    bottom: -18vh; /*下に固定*/
 
   }
   
@@ -196,3 +280,29 @@ body {
   i {
     padding-right: 8px;
   }
+
+  
+#loader-wrap {
+    -moz-animation: cssAnimation 0.5s ease-in 0.8s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0.5s ease-in 0.8s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0.5s ease-in 0.8s forwards;
+    /* Opera */
+    animation: cssAnimation 0.5s ease-in 0.8s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        opacity: 0;
+        overflow:hidden;
+        z-index: 1;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        opacity: 0;
+        visibility:hidden;
+    }
+}
