@@ -79,7 +79,7 @@ body {
   }
 
   100% {
-    background-color: rgba(240, 239, 239, 0.85);
+    background-color: rgba(240, 239, 239, 0.9);
     transform: translateY(0px);
   }
 }
