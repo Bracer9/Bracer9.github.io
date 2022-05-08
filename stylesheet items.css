@@ -60,15 +60,29 @@ body {
     transition: all 0.3s;
   }
 
-.contents-wrapper {
+  .contents-wrapper {
     height: 1220px;
-    background-color: rgba(240, 239, 239, 0.85);
+    background-color: rgba(240, 239, 239, 0);
     width: 60%;
     margin: 0 auto;
     padding-top: 100px;
+    animation-name: backinanime;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
 }
 
+@keyframes backinanime {
+  0% {
+    background-color: rgba(240, 239, 239, 0);
+    transform: translateY(600px);
+  }
 
+  100% {
+    background-color: rgba(240, 239, 239, 0.85);
+    transform: translateY(0px);
+  }
+}
 
 .title {
     font-size: 50px;
@@ -79,12 +93,45 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
+    animation-name: fadeintitle;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
 }
+
+@keyframes fadeintitle {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
 
 .main {
     font-size: 26px;
     font-weight: 550;
     font-family: "Yu Gothic";
+    animation-name: fadeinmain;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+@keyframes fadeinmain {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
 }
 
   .footer {
