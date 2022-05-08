@@ -7,8 +7,10 @@ body {
     background-color: #bfd1c9;
     background-image: url(Miku\ at\ home.jpg);
     background-size: repeat;
+    background-size: 100%;
     min-height: 100vh;
     position: relative;
+    zoom: 75%;
   }    
   #loader-wrap {
     position: fixed;
@@ -242,11 +244,11 @@ body {
     opacity: 0.7;
   }
   
-.footer-logo:hover {
+  .footer-logo:hover {
   opacity: 1;
 }
 
-.footer-logo {
+  .footer-logo {
   transition: all 0.5s;
 }
 
@@ -283,13 +285,13 @@ body {
 
   
 #loader-wrap {
-    -moz-animation: cssAnimation 0.5s ease-in 0.8s forwards;
+    -moz-animation: cssAnimation 0.5s ease-in 0.5s forwards;
     /* Firefox */
-    -webkit-animation: cssAnimation 0.5s ease-in 0.8s forwards;
+    -webkit-animation: cssAnimation 0.5s ease-in 0.5s forwards;
     /* Safari and Chrome */
-    -o-animation: cssAnimation 0.5s ease-in 0.8s forwards;
+    -o-animation: cssAnimation 0.5s ease-in 0.5s forwards;
     /* Opera */
-    animation: cssAnimation 0.5s ease-in 0.8s forwards;
+    animation: cssAnimation 0.5s ease-in 0.5s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
