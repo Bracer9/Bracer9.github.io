@@ -116,6 +116,7 @@ body {
     font-size: 26px;
     font-weight: 550;
     font-family: "Yu Gothic";
+    margin: 0px 20px 0 20px;
     animation-name: fadeinmain;
     animation-duration: 3s;
     animation-fill-mode: forwards;
