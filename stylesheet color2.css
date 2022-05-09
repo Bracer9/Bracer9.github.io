@@ -95,7 +95,7 @@ body {
     list-style: none;
   }
   
-  .header {
+  .header {  
     background-color: #c0babc;
     color: #fff;
     height: 92px;
@@ -109,6 +109,7 @@ body {
     animation-fill-mode: forwards;
     animation-delay: 0.7s;
     animation-duration: 0.9s;
+    cursor: url(leek-32.png), default;
     
   }
   
@@ -120,6 +121,7 @@ body {
   100% {
     margin-top: -15px;
     opacity: 0.9;
+    
   }
 }
 
@@ -259,6 +261,7 @@ body {
     width: 100%;
     position: absolute;/*←絶対位置*/
     bottom: -18vh; /*下に固定*/
+    cursor: url(leek-32.png), default;
 
   }
   
