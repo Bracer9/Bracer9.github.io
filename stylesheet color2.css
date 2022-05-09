@@ -185,6 +185,7 @@ body {
     animation-delay: 0.9s;
   }
   
+  
   @keyframes searchanime {
     0% {
       opacity: 0;
@@ -297,11 +298,41 @@ body {
   .ERO {
     position: absolute;
     top: -190px;
-    color: rgb(37, 36, 35);
+    color: rgba(37, 36, 35, 0);
+    animation-name: EROanime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
   }
+
+  @keyframes EROanime {
+    0% {
+      color: rgba(37, 36, 35, 0)
+    }
+
+    100% {
+      color: rgba(37, 36, 35, 1)
+    }
+  }
+
   .HELLO {
-    color: rgb(37, 36, 35);
+    color:rgba(37, 36, 35, 0);
+    animation-name: HELLOanime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
   }
+
+  @keyframes HELLOanime {
+    0% {
+      color: rgba(37, 36, 35, 0)
+    }
+
+    100% {
+      color: rgba(37, 36, 35, 1)
+    }
+  }
+
   .span-2 {
     color: rgb(202, 197, 197);
     opacity: 0;
