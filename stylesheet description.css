@@ -61,7 +61,7 @@ body {
   }
 
 .contents-wrapper {
-    height: 1220px;
+    height: 1000px;
     background-color: rgba(240, 239, 239, 0);
     width: 60%;
     margin: 0 auto;
@@ -116,9 +116,9 @@ body {
 .main {
     font-size: 26px;
     font-weight: 500;
-    height: 860px;
+    height: 600px;
     font-family: "Yu Gothic";
-    padding: 50px 55px 0 55px;
+    padding: 30px 55px 80px 55px;
     margin-top: 30px;
     animation-name: fadeinmain;
     animation-duration: 3s;
@@ -136,9 +136,22 @@ body {
   100% {
     opacity: 1;
   }
-
 }
 
+.main::-webkit-scrollbar {
+  width: 20px;
+}
+
+.main::-webkit-scrollbar-track {
+  background: rgba(111, 255, 255, 0);
+  border-radius: 30px;
+  box-shadow:0 0 5px rgba(240, 239, 239, 0.93) inset ;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: rgba(111, 255, 255, 0.5);
+  border-radius: 30px;
+}
   .footer {
     background-color: #4d3e45;
     color: #fff;
