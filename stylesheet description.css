@@ -116,13 +116,16 @@ body {
 .main {
     font-size: 26px;
     font-weight: 500;
+    height: 860px;
     font-family: "Yu Gothic";
-    padding: 0px 55px 0 55px;
+    padding: 50px 55px 0 55px;
+    margin-top: 30px;
     animation-name: fadeinmain;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-delay: 1s;
     opacity: 0;
+    overflow-y: scroll;
 }
 
 @keyframes fadeinmain {
