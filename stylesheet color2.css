@@ -305,7 +305,7 @@ body {
     animation-name: EROanime;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
+    animation-delay: 2s;
   }
 
   @keyframes EROanime {
