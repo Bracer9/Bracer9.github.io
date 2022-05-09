@@ -7,6 +7,7 @@ body {
     min-height: 100vh;
     position: relative;
     zoom: 75%; 
+    cursor: url(leek-32.png), default;
   }  
 
   .header {
@@ -32,7 +33,6 @@ body {
     text-decoration: none;
     color: #fff;
     transition: all 0.6s;
-    
   }
   
   .header-logo:hover {
@@ -70,6 +70,7 @@ body {
     animation-duration: 0.9s;
     animation-fill-mode: forwards;
     animation-delay: 0.2s;
+    cursor: auto;
 }
 
 @keyframes backinanime {
@@ -114,9 +115,9 @@ body {
 
 .main {
     font-size: 26px;
-    font-weight: 550;
+    font-weight: 500;
     font-family: "Yu Gothic";
-    margin: 0px 55px 0 55px;
+    padding: 0px 55px 0 55px;
     animation-name: fadeinmain;
     animation-duration: 3s;
     animation-fill-mode: forwards;
