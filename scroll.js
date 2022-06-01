@@ -1,6 +1,6 @@
 $('#container').scrollgress({//バーの高さの基準となるエリア指定
-    height: '7px',//バーの高さ
-    color: 'rgb(10, 200, 200)',//バーの色
+    height: '5px',//バーの高さ
+    color: 'rgba(0, 255, 255, 0.8)',//バーの色
 });
 
 $(window).scroll(function() {
