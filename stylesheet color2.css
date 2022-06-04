@@ -997,8 +997,8 @@ html::-webkit-scrollbar-thumb {
   /*周囲の線の起点とするためrelativeを指定*/
 position: relative;
   /*円の形状*/
-width:80px;
-height:80px;
+width:90px;
+height:90px;
   box-sizing: border-box;
   padding: 0 10px;
 text-align: center;
@@ -1013,7 +1013,7 @@ color: #fff;
   justify-content: center;
   margin-left: auto;
   margin-top: 120px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 /*内側の線*/
