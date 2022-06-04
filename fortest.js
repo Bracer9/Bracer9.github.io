@@ -13,19 +13,18 @@ function particleTextAnime() {
 $("#particle").particleText({
     text: " <br>P R O E R O", // 表示させたいテキスト。改行の場合は<br>追加
     colors:["#000"], // パーティクルの色を複数指定可能
-    speed: "high", // slow, middle, high の3つから粒子が集まる速さを選択
+    speed: "slow", // slow, middle, high の3つから粒子が集まる速さを選択
     });
 }
 
-setTimeout(particleTextAnime, 2930);
 
 
 
 $(window).on('load',function(){
-    $("#splash-logo").delay(400).fadeOut('slow');//ロゴを0.35秒でフェードアウトする記述
+    $("#splash-logo").delay(1000).fadeOut('slow');//ロゴを0.35秒でフェードアウトする記述
     
     //=====ここからローディングエリア（splashエリア）を0.5秒でフェードアウトした後に動かしたいJSをまとめる
-    $("#splash").delay(500).fadeOut('slow',function(){//ローディングエリア（splashエリア）を1.5秒でフェードアウトする記述
+    $("#splash").delay(400).fadeOut('slow',function(){//ローディングエリア（splashエリア）を1.5秒でフェードアウトする記述
     
     $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
     

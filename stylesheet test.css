@@ -8,21 +8,6 @@
   height: 100vh;
   vertical-align: bottom;/*canvasタグ下に余白が生まれるのを防ぐ*/
   z-index: 2;
-  animation-name: particleappear;
-  animation-delay: 3s;
-  animation-duration: 0.01s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@keyframes particleappear {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 @media screen and (max-width:768px) {
@@ -105,14 +90,14 @@ h2{
     opacity: 0;
     animation-name: headeranime;
     animation-fill-mode: forwards;
-    animation-delay: 2.5s;
-    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-duration: 1.8s;
     cursor: url(leek-32.png), default; 
   }
   
 @keyframes headeranime {
   0% {
-    margin-top: -100px;
+    margin-top: 50px;
     opacity: 0;
   }
   100% {
@@ -442,8 +427,8 @@ body.appear .splashbg{
 /*bodyにappearクラスがついたら出現*/
 body.appear #container{
 	animation-name:PageAnimeAppear;
-	animation-duration:0.8s;
-	animation-delay: 1.2s;
+	animation-duration:0.001s;
+	animation-delay: 0s;
 	animation-fill-mode:forwards;
 	opacity: 0;
 }
