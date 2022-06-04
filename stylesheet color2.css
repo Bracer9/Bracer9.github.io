@@ -12,7 +12,6 @@ html {
 
 body {
   font-family: "Avenir Next";
-  
   padding: 0;
   margin: 0;
   min-height: 100vh;
@@ -30,7 +29,8 @@ body {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background: rgb(13, 197, 193);
+    /*rgb(13, 197, 193)*/
+    background: black;
     z-index: 999;
     box-sizing: border-box;
   }
@@ -315,7 +315,7 @@ body {
     /*border:3px solid #bcbbbb;*/
     border:3px solid rgba(245, 245, 245, 0.816);
     vertical-align:middle;
-    margin-bottom:4px;
+    margin-top: -195px;
     transition: border-color 0.5s;
     transition: transform .6s ease;
   }
@@ -342,7 +342,9 @@ body {
    margin-top: -0px;
    animation: 
       zoomInAnime 1s 1.7s forwards,
-      down 2.7s infinite 2.8s running;
+      down 2.2s infinite 2.8s running;
+   width: 30%;
+   margin: auto;
   }
   
   
@@ -384,7 +386,7 @@ body {
     background-color: rgba(240, 239, 239, 1);
     width: 80.5%;
     flex: 1;
-    height: 2060px;
+    height: 2860px; /* 740px */
     min-height: 100%;
     margin: 0 auto;
     margin-top: 60px;
@@ -922,22 +924,7 @@ html::-webkit-scrollbar-thumb {
   background: #65575d;
 }
 
-.ornament {
-  animation: appear .6s 0.2s forwards;
-  opacity: 0;
-}
 
-@keyframes appear {
-  0% {
-    margin-left: -300px;
-    opacity: 0;
-  }
-  100% {
-    margin-top: 0px;
-    opacity: 0.9;
-    
-  }
-}
 
 
 /*　Y軸（横へ） */
@@ -984,10 +971,10 @@ html::-webkit-scrollbar-thumb {
   0% {
     transform: translate(0);
   }
-  12% {
-    transform: translateY(18px);
+  16% {
+    transform: translateY(24px);
   }
-  24% {
+  32% {
     transform: translate(0);
   }
 }
@@ -996,10 +983,58 @@ html::-webkit-scrollbar-thumb {
   0% {
     transform: translate(0);
   }
-  12% {
-    transform: translateY(18px);
+  16% {
+    transform: translateY(24px);
   }
-  24% {
+  32% {
     transform: translate(0);
   }
+}
+
+/*== 押し込む円 */
+
+.pushcircle{
+  /*周囲の線の起点とするためrelativeを指定*/
+position: relative;
+  /*円の形状*/
+width:80px;
+height:80px;
+  box-sizing: border-box;
+  padding: 0 10px;
+text-align: center;
+background-color: rgb(58, 58, 58);
+border-radius:50%;
+color: #fff;
+  text-decoration: none;
+  outline: none;
+  /*天地中央にテキストを配置*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-top: 120px;
+  margin-right: 5px;
+}
+
+/*内側の線*/
+.pushcircle:after {
+content: "";
+  /*絶対配置で線の位置を決める*/
+position: absolute;
+top: 50%;
+left: 50%;
+  /*線の形状*/
+  width: 85%;
+height: 85%;
+border: 3px solid #333;
+border-radius: 50%;
+transform: translate(-50%, -50%) scale(1.1);
+  /*アニメーションの指定*/
+  transition: .3s ease; 
+}
+
+/*hoverをしたら枠線が小さくなる*/
+.pushcircle:hover:after {
+transform: translate(-50%, -50%) scale(1);
+  border-color:#fff;
 }
