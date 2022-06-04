@@ -1,5 +1,39 @@
 @charset "utf-8";
 
+#particle{
+  position: absolute;
+  left:0;
+  top:-5%;
+  width:100%;
+  height: 100vh;
+  vertical-align: bottom;/*canvasタグ下に余白が生まれるのを防ぐ*/
+  z-index: 2;
+  animation-name: particleappear;
+  animation-delay: 3s;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes particleappear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width:768px) {
+#particle{
+  width:170%;
+height:170vh;
+  left:-35%;
+  top:-35vh;
+  }    
+}
+
 /*========= レイアウトのためのCSS ===============*/
 
 body{
@@ -309,39 +343,7 @@ h2{
 
 
 
-#particle{
-  position: absolute;
-  left:0;
-  top:-5%;
-  width:100%;
-  height: 100vh;
-  vertical-align: bottom;/*canvasタグ下に余白が生まれるのを防ぐ*/
-  z-index: 2;
-  animation-name: particleappear;
-  animation-delay: 3s;
-  animation-duration: 0.01s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
 
-@keyframes particleappear {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@media screen and (max-width:768px) {
-#particle{
-  width:170%;
-height:170vh;
-  left:-35%;
-  top:-35vh;
-  }    
-}
 
 
 #luxy {
