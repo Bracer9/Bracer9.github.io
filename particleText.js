@@ -48,7 +48,7 @@
                 x: r,
                 y: q
             };
-            this.r = f.clientWidth / 2 * 0.003;//数字が大きくなると粒子のサイズが小さくなる
+            this.r = f.clientWidth / 2 * 0.0015;//数字が大きくなると粒子のサイズが小さくなる
             this.color = b[Math.floor(Math.random() * b.length)]
         }
         g.prototype.render = function () {
@@ -144,8 +144,8 @@
             o.clearRect(0, 0, f.width, f.height);
             o.globalCompositeOperation = "source-over";
             n = [];
-            for (var t = 0; t < x; t += Math.round(x / 300)) {//粒子の数
-                for (var s = 0; s < r; s += Math.round(x / 300)) {//粒子の数
+            for (var t = 0; t < x; t += Math.round(x / 450)) {//粒子の数
+                for (var s = 0; s < r; s += Math.round(x / 450)) {//粒子の数
                     if (u[(
                             (t + s * x) * 4
                         ) + 3] > 150) {
