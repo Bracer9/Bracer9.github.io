@@ -21,84 +21,6 @@ body {
   position: relative;
   }   
 
-  #loader-wrap {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    /*rgb(13, 197, 193)*/
-    background: black;
-    z-index: 999;
-    box-sizing: border-box;
-  }
-
-.loader,
-.loader:before,
-.loader:after {
-  background: #ffffff;
-  -webkit-animation: load1 1s infinite ease-in-out;
-  animation: load1 1s infinite ease-in-out;
-  width: 1em;
-  height: 4em;
-}
-.loader {
-  color: #ffffff;
-  text-indent: -9999em;
-  margin: 88px auto;
-  position: relative;
-  font-size: 11px;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation-delay: -0.16s;
-  animation-delay: -0.16s;
-}
-.loader:before,
-.loader:after {
-  position: absolute;
-  top: 0;
-  content: '';
-}
-.loader:before {
-  left: -1.5em;
-  -webkit-animation-delay: -0.32s;
-  animation-delay: -0.32s;
-}
-.loader:after {
-  left: 1.5em;
-}
-@-webkit-keyframes load1 {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0;
-    height: 4em;
-  }
-  40% {
-    box-shadow: 0 -2em;
-    height: 5em;
-  }
-}
-@keyframes load1 {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0;
-    height: 4em;
-  }
-  40% {
-    box-shadow: 0 -2em;
-    height: 5em;
-  }
-}
-
-.loaded {
-  opacity: 0;
-  visibility: hidden;
-}
 
   li {
     list-style: none;
@@ -116,7 +38,7 @@ body {
     opacity: 0;
     animation-name: headeranime;
     animation-fill-mode: forwards;
-    animation-delay: 2.5s;
+    animation-delay: 1.7s;
     animation-duration: 1.1s;
     cursor: url(leek-32.png), default; 
   }
@@ -287,8 +209,8 @@ body {
    opacity: 0;
    margin-top: -0px;
    animation: 
-      zoomInAnime 1s 2.8s forwards,
-      down 2.2s infinite 3.6s running;
+      zoomInAnime 1s 1.7s forwards,
+      down 2.2s infinite 2.5s running;
    width: 30%;
    margin: auto;
   }
@@ -464,31 +386,6 @@ body {
     padding-right: 8px;
   }
 
-  
-#loader-wrap {
-    -moz-animation: cssAnimation 0.5s ease-in 0.5s forwards;
-    /* Firefox */
-    -webkit-animation: cssAnimation 0.5s ease-in 0.5s forwards;
-    /* Safari and Chrome */
-    -o-animation: cssAnimation 0.5s ease-in 0.5s forwards;
-    /* Opera */
-    animation: cssAnimation 0.5s ease-in 0.5s forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-@keyframes cssAnimation {
-    to {
-        opacity: 0;
-        overflow:hidden;
-        z-index: 0;
-    }
-}
-@-webkit-keyframes cssAnimation {
-    to {
-        opacity: 0;
-        visibility:hidden;
-    }
-}
 
 
 .toppicture {
@@ -808,7 +705,7 @@ html::-webkit-scrollbar-thumb {
 	background: url("crossroad.jpg") no-repeat top center;/*背景画像の設定※オリジナルの画像に設定してください*/
 	background-size:cover;
 	transform-origin:center;/*変化する基点を中心からに設定*/
-  animation: crossroadanime 2s 2.5s forwards;
+  animation: crossroadanime 2.2s 0.9s forwards;
   opacity: 0;
 }
 
@@ -872,7 +769,7 @@ color: #fff;
   font-size: 1em;
   position: fixed;
   z-index: 100;
-  animation: pushcircleanime 1s 2.7s forwards;
+  animation: pushcircleanime 1s 1.9s forwards;
   opacity: 0;
 }
 
@@ -920,23 +817,8 @@ transform: translate(-50%, -50%) scale(1);
 /*全共通*/
 
 .bgextend{
-	animation-name:bgextendAnimeBase;
-	animation-duration:1s;
-  animation-delay: 1.5s;
-	animation-fill-mode:forwards;
 	position: relative;
 	overflow: hidden;/*　はみ出た色要素を隠す　*/
-	opacity:0;
-}
-
-@keyframes bgextendAnimeBase{
-  from {
-    opacity:0;
-  }
-
-  to {
-    opacity:1;  
-}
 }
 
 /*中の要素*/
@@ -960,7 +842,7 @@ transform: translate(-50%, -50%) scale(1);
 /*左から右*/
 .bgLRextend::before{
 	animation-name:bgLRextendAnime;
-	animation-duration:1.5s;
+	animation-duration:1.66s;
 	animation-fill-mode:forwards;
     content: "";
     position: absolute;
@@ -1022,3 +904,19 @@ transform: translate(-50%, -50%) scale(1);
 .blurTrigger{
     opacity: 0;
 }
+
+.bgappearTrigger {
+  animation: hidehelloero 0.001s 0.99s forwards;
+  opacity: 0;
+}
+
+@keyframes hidehelloero {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+

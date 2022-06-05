@@ -50,7 +50,7 @@ $('.bgappearTrigger').each(function(){ //bgappearTriggerというクラス名が
 
 // 画面が読み込まれたらすぐに動かしたい場合の記述
 $(window).ready(function(){
-  setTimeout(function(){ BgFadeAnime(); }, 1000);
+  setTimeout(function(){ BgFadeAnime(); }, 0);
 });
 
   /* アニメーション用の関数を呼ぶ*/
