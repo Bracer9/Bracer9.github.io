@@ -922,7 +922,7 @@ transform: translate(-50%, -50%) scale(1);
 .bgextend{
 	animation-name:bgextendAnimeBase;
 	animation-duration:1s;
-  animation-delay: 1.3s;
+  animation-delay: 1.4s;
 	animation-fill-mode:forwards;
 	position: relative;
 	overflow: hidden;/*　はみ出た色要素を隠す　*/
