@@ -842,7 +842,7 @@ transform: translate(-50%, -50%) scale(1);
 /*左から右*/
 .bgLRextend::before{
 	animation-name:bgLRextendAnime;
-	animation-duration:1.66s;
+	animation-duration:1.9s;
 	animation-fill-mode:forwards;
     content: "";
     position: absolute;
@@ -906,7 +906,7 @@ transform: translate(-50%, -50%) scale(1);
 }
 
 .bgappearTrigger {
-  animation: hidehelloero 0.001s 0.99s forwards;
+  animation: hidehelloero 0.001s 1.09s forwards;
   opacity: 0;
 }
 
