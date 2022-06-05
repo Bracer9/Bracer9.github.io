@@ -907,21 +907,6 @@ transform: translate(-50%, -50%) scale(1);
     opacity: 0;
 }
 
-.bgappearTrigger {
-  animation: hidehelloero 0.001s 1.09s forwards;
-  opacity: 0;
-}
-
-@keyframes hidehelloero {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 body {
   background-color: black;
 }
