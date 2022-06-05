@@ -705,7 +705,7 @@ html::-webkit-scrollbar-thumb {
 	background: url("crossroad.jpg") no-repeat top center;/*背景画像の設定※オリジナルの画像に設定してください*/
 	background-size:cover;
 	transform-origin:center;/*変化する基点を中心からに設定*/
-  animation: crossroadanime 2.2s 0.9s forwards;
+  animation: crossroadanime 1.5s 0.9s forwards;
   opacity: 0;
 }
 
@@ -844,7 +844,8 @@ transform: translate(-50%, -50%) scale(1);
 /*左から右*/
 .bgLRextend::before{
 	animation-name:bgLRextendAnime;
-	animation-duration:1.9s;
+  animation-delay: 1s;
+	animation-duration:0.95s;
 	animation-fill-mode:forwards;
     content: "";
     position: absolute;
@@ -853,15 +854,8 @@ transform: translate(-50%, -50%) scale(1);
     background-color: black;/*伸びる背景色の設定*/
 }
 @keyframes bgLRextendAnime{
+	
 	0% {
-		transform-origin:left;
-		transform:scaleX(0);
-	}
-	50% {
-		transform-origin:left;
-		transform:scaleX(1);
-	}
-	50.001% {
 		transform-origin:right;
 	}
 	100% {
@@ -906,6 +900,7 @@ transform: translate(-50%, -50%) scale(1);
 .blurTrigger{
     opacity: 0;
 }
+
 
 body {
   background-color: black;
