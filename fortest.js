@@ -11,7 +11,7 @@
 /*===========================================================*/
 function particleTextAnime() {
 $("#particle").particleText({
-    text: " <br>P R O E R O", // 表示させたいテキスト。改行の場合は<br>追加
+    text: " <br>H I S T O R Y", // 表示させたいテキスト。改行の場合は<br>追加
     colors:["#000"], // パーティクルの色を複数指定可能
     speed: "slow", // slow, middle, high の3つから粒子が集まる速さを選択
     });
