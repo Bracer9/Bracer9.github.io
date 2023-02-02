@@ -710,6 +710,11 @@ html::-webkit-scrollbar-thumb {
   opacity: 0;
 }
 
+#red{
+  color: rgb(239, 48, 48);
+  opacity: 0.5;
+}
+
 @keyframes crossroadanime {
   0% {
     filter: blur(15px);
