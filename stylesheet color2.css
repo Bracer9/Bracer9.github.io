@@ -828,8 +828,8 @@ transform: translate(-50%, -50%) scale(1);
 /*中の要素*/
 .bgappear{
     animation-name:bgextendAnimeSecond;
-    animation-duration:1s;
-    animation-delay: 0.6s;
+    animation-duration:3s;
+    animation-delay: 0s;
     animation-fill-mode:forwards;
     opacity: 0;
 }
