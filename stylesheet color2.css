@@ -825,23 +825,7 @@ transform: translate(-50%, -50%) scale(1);
     overflow: hidden;/*　はみ出た色要素を隠す　*/
 }
 
-/*中の要素*/
-.bgappear{
-    animation-name:bgextendAnimeSecond;
-    animation-duration:3s;
-    animation-delay: 0s;
-    animation-fill-mode:forwards;
-    opacity: 0;
-}
 
-@keyframes bgextendAnimeSecond{
-    0% {
-    opacity: 0;
-    }
-    100% {
-    opacity: 1;
-}
-}
 
 #extend {
   margin-top: 200px;
