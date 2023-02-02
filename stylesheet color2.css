@@ -28,7 +28,7 @@ body {
   
   .header {  
     /*d67539 65575d 312c2e*/
-    background-color: rgb(226, 224, 224);
+    background-color: whitesmoke;
     color: #fff;
     height: 75px;
     position: fixed;
