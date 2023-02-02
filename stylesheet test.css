@@ -463,6 +463,74 @@ html::-webkit-scrollbar-thumb {
   background: #000000;
 }
 
+/*== 押し込む円 */
+
+.pushcircle{
+  /*周囲の線の起点とするためrelativeを指定*/
+position: relative;
+  /*円の形状*/
+width:90px;
+height:90px;
+  box-sizing: border-box;
+  padding: 0 15px;
+text-align: center;
+background-color: rgb(58, 58, 58);
+border-radius:50%;
+color: #fff;
+  text-decoration: none;
+  outline: none;
+  /*天地中央にテキストを配置*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-top: 540px;
+  font-size: 1em;
+  position: fixed;
+  z-index: 100;
+  animation: pushcircleanime 1s 1.9s forwards;
+  opacity: 0;
+}
+
+@keyframes pushcircleanime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} 
+
+/*内側の線*/
+.pushcircle:after {
+content: "";
+  /*絶対配置で線の位置を決める*/
+position: absolute;
+top: 50%;
+left: 50%;
+  /*線の形状*/
+  width: 85%;
+height: 85%;
+border: 3px solid #333;
+border-radius: 50%;
+transform: translate(-50%, -50%) scale(1.1);
+  /*アニメーションの指定*/
+  transition: .3s ease; 
+}
+
+/*hoverをしたら枠線が小さくなる*/
+.pushcircle:hover:after {
+transform: translate(-50%, -50%) scale(1);
+  border-color:#fff;
+}
+
+#history {
+  float: right;
+  width: 100px;
+  margin-right: 15px;
+  margin-top: 630px;
+}
 
 /*=== 9-1-2 丸が動いてスクロールを促す ====*/
 
