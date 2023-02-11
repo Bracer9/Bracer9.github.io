@@ -12,8 +12,11 @@ html {
   
   body {
     font-family: "Avenir Next";
-    background: url("miku and birds noise fixed.png") no-repeat top center;/*背景画像の設定※オリジナルの画像に設定してください*/
-    background-size:cover;
+    background-image: url(miku\ and\ birds\ noise\ fixed.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
     padding: 0;
     margin: 0;
     min-height: 100vh;
